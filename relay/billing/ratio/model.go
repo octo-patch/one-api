@@ -282,6 +282,8 @@ var ModelRatio = map[string]float64{
 	"Baichuan2-Turbo-192k": 0.016 * RMB,
 	"Baichuan2-53B":        0.02 * RMB,
 	// https://platform.minimax.io/docs/api-reference/text-openai-api
+	"MiniMax-M2.7":           0.3 / 1000 * USD,  // $0.3 / M input tokens
+	"MiniMax-M2.7-highspeed": 0.6 / 1000 * USD,  // $0.6 / M input tokens
 	"MiniMax-M2.5":           0.3 / 1000 * USD,  // $0.3 / M input tokens
 	"MiniMax-M2.5-highspeed": 0.6 / 1000 * USD,  // $0.6 / M input tokens
 	"MiniMax-VL-01":          0.3 / 1000 * USD,
@@ -635,6 +637,8 @@ var CompletionRatio = map[string]float64{
 	"deepseek-chat":     0.28 / 0.14,
 	"deepseek-reasoner": 2.19 / 0.55,
 	// minimax
+	"MiniMax-M2.7":           1.2 / 0.3, // $1.2 / $0.3
+	"MiniMax-M2.7-highspeed": 2.4 / 0.6, // $2.4 / $0.6
 	"MiniMax-M2.5":           1.2 / 0.3, // $1.2 / $0.3
 	"MiniMax-M2.5-highspeed": 2.4 / 0.6, // $2.4 / $0.6
 }
